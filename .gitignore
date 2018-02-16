@@ -1,8 +1,5 @@
 #Bundle file
 public/bundle.js
 
-#Package-lock
-package-lock.json
-
 #node_modules
 node_modules/
