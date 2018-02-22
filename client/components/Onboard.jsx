@@ -26,10 +26,12 @@ export default class Onboard extends React.Component {
 
   render() {
 
+    let { userId, actions } = this.props
+
     const forms = [
-      <FirstForm actions={this.props.actions}/>,
-      <SecondForm actions={this.props.actions}/>,
-      <ThirdForm actions={this.props.actions}/>
+      <FirstForm actions={actions} userId={userId}/>,
+      <SecondForm actions={actions} userId={userId}/>,
+      <ThirdForm actions={actions} userId={userId}/>
     ];
 
     return(

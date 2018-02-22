@@ -14,16 +14,15 @@ export default class App extends React.Component {
 
   render() {
 
-    console.log(this.props);
-    const { formIndex, actions } = this.props;
+    const { formIndex, userId, actions } = this.props;
 
     return (
 
       <div className="fw fh flex-row-centered">
         <Router history={hashHistory}>
           <Switch>
-            <Route exact path="/" render={() => <Landing formIndex={formIndex} actions={actions} />} />
-            <Route path="/onboard" render={() => <Onboard formIndex={formIndex} actions={actions} />} />
+            <Route exact path="/" render={() => <Landing formIndex={formIndex} actions={actions} userId={userId} />} />
+            <Route path="/onboard" render={() => <Onboard formIndex={formIndex} actions={actions} userId={userId} />} />
           </Switch>
         </Router>
       </div>

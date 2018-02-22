@@ -63,7 +63,7 @@ export default class FirstForm extends React.Component {
         </form>
 
         <SaveButton
-          onClick={() => this.props.actions.updateFormThunk(types.UPDATE_FORM_ONE, this.state)}
+          onClick={() => this.props.actions.updateFormThunk(types.UPDATE_FORM_ONE, this.state, this.props.userId)}
           label="Save"
         />
       </div>

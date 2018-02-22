@@ -1,13 +1,12 @@
-import * as types from '../types';
 import * as formActions from './formActions';
 import * as formIndexActions from './formIndexActions';
-
-console.log(formIndexActions);
+import * as userIdActions from './userIdActions';
 
 const actions = Object.assign(
   {},
   formActions,
-  formIndexActions
+  formIndexActions,
+  userIdActions
 );
 
 export default actions;

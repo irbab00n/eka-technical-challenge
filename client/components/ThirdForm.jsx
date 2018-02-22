@@ -77,7 +77,7 @@ export default class ThirdForm extends React.Component {
           />
         </form>
         <SaveButton
-          onClick={() => this.props.actions.updateFormThunk(types.UPDATE_FORM_THREE, this.state)}
+          onClick={() => this.props.actions.updateFormThunk(types.UPDATE_FORM_THREE, this.state, this.props.userId)}
           label="Save"
         />
       </div>
