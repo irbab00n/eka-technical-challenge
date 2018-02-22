@@ -14,3 +14,5 @@ npm install
 ```
 npm start
 ```
+
+Placing this here to mark the next 5 hour segment to get the database functioning
